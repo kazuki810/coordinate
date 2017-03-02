@@ -1,0 +1,6 @@
+<div class="contents row">
+  <% @codes.each do |code| %>
+    <%= render partial: "code", locals: { code: code } %>
+  <% end %>
+  <%= paginate(@codes) %>
+</div>
